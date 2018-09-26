@@ -53,7 +53,6 @@ iOS9以上需要在info.plist进行如下设置：
   loginReq.expired = [NSNumber numberWithLong:[NSDate date].timeIntervalSince1970];
   loginReq.loginMemo = @"Memo";
 
-
   [MathWalletAPI sendReq:loginReq];
 ```
 
@@ -77,6 +76,7 @@ iOS9以上需要在info.plist进行如下设置：
 
   transferReq.desc = @"这是展示在钱包中的描述";
   transferReq.expired = [NSNumber numberWithLong:[NSDate date].timeIntervalSince1970];
+  
   [MathWalletAPI sendReq:transferReq];
 ```
  
