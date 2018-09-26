@@ -37,7 +37,7 @@ iOS9以上需要在info.plist进行如下设置：
 @end
 ```
 
-### 3、跳转到MathWallet进行登录操作
+### 3、使用MathWallet进行登录操作
 
 ```Objective C
   MathWalletLoginReq *loginReq = [[MathWalletLoginReq alloc] init];
@@ -56,3 +56,28 @@ iOS9以上需要在info.plist进行如下设置：
   [MathWalletAPI sendReq:loginReq];
 @end
 ```
+
+### 4、使用MathWallet进行转账操作
+
+```Objective C
+  MathWalletTransferReq *transferReq = [[MathWalletTransferReq alloc] init];
+  // 公链标识
+  transferReq.blockchain = @"eosio";
+  // DApp信息
+  transferReq.dappIcon = @"http://www.mathwallet.org/images/download/wallet_cn.png";
+  transferReq.dappName = @"Demos";
+  // 转账信息
+  transferReq.from = @"eosioaccount";
+  transferReq.to = @"eosioaccount";
+  transferReq.amount = @"1.0000";
+  transferReq.precision = @(4);
+  transferReq.symbol = @"EOS";
+  transferReq.contract = @"eosio.token";
+  transferReq.dappData = @"备注";
+
+  transferReq.desc = @"这是展示在钱包中的描述";
+  transferReq.expired = [NSNumber numberWithLong:[NSDate date].timeIntervalSince1970];
+  [MathWalletAPI sendReq:transferReq];
+@end
+```
+ 
