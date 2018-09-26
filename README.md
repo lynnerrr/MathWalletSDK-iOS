@@ -34,7 +34,6 @@ iOS9以上需要在info.plist进行如下设置：
     }];
     return handle;
 }
-@end
 ```
 
 ### 3、使用MathWallet进行登录操作
@@ -78,6 +77,5 @@ iOS9以上需要在info.plist进行如下设置：
   transferReq.desc = @"这是展示在钱包中的描述";
   transferReq.expired = [NSNumber numberWithLong:[NSDate date].timeIntervalSince1970];
   [MathWalletAPI sendReq:transferReq];
-@end
 ```
  
