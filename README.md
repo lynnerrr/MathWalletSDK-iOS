@@ -34,6 +34,8 @@ iOS9以上需要在info.plist进行如下设置：
     }];
     return handle;
 }
+
+@end
 ```
 
 ### 3、使用MathWallet进行登录操作
@@ -53,7 +55,6 @@ iOS9以上需要在info.plist进行如下设置：
 
 
   [MathWalletAPI sendReq:loginReq];
-@end
 ```
 
 ### 4、使用MathWallet进行转账操作
