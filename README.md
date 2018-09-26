@@ -8,7 +8,7 @@
 ###1、在Xcode工程info.plist-> URL types -> URL Schemes里添加mathwalletdemos
 
 ###2、使用MathWalletAPI注册URL Schemes 和 处理URL，代码如下
-```
+```Objective C
 #import <MathWalletSDK/MathWalletAPI.h>
   
   
