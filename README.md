@@ -3,13 +3,14 @@
 
 
 
-##如何使用？
+## 如何使用？
 
-###1、在Xcode工程info.plist-> URL types -> URL Schemes里添加
+### 1、在Xcode工程info.plist-> URL types -> URL Schemes里添加
 ![URL Schemes](https://github.com/MediShares/MathWalletSDK-iOS/blob/master/urlschemes.jpeg "URL Schemes")
 
 
-###2、使用MathWalletAPI注册URL Schemes 和 处理URL，代码如下
+### 2、注册URL Schemes和处理URL
+
 ```Objective C
 #import <MathWalletSDK/MathWalletAPI.h>
   
@@ -30,5 +31,25 @@
     }];
     return handle;
 }
+@end
+```
+
+### 3、跳转到MathWallet进行登录操作
+
+```Objective C
+  MathWalletLoginReq *loginReq = [[MathWalletLoginReq alloc] init];
+  // 公链标识
+  loginReq.blockchain = @"eosio";
+  // DApp信息
+  loginReq.dappIcon = @"http://www.mathwallet.org/images/download/wallet_cn.png";
+  loginReq.dappName = @"Demos";
+  // DApp Server
+  loginReq.uuID = @"本次登录uid";
+  loginReq.loginUrl = @"登录回调";
+  loginReq.expired = [NSNumber numberWithLong:[NSDate date].timeIntervalSince1970];
+  loginReq.loginMemo = @"Memo";
+
+
+  [MathWalletAPI sendReq:loginReq];
 @end
 ```
