@@ -5,7 +5,9 @@
 
 ##如何使用？
 
-###1、在Xcode工程info.plist-> URL types -> URL Schemes里添加mathwalletdemos
+###1、在Xcode工程info.plist-> URL types -> URL Schemes里添加
+![URL Schemes](https://github.com/MediShares/MathWalletSDK-iOS/blob/master/urlschemes.jpeg "URL Schemes")
+
 
 ###2、使用MathWalletAPI注册URL Schemes 和 处理URL，代码如下
 ```Objective C
