@@ -50,7 +50,7 @@ iOS9以上需要在info.plist进行如下设置：
   // DApp Server
   loginReq.uuID = @"本次登录uid";
   loginReq.loginUrl = @"登录回调";
-  loginReq.expired = [NSNumber numberWithLong:[NSDate date].timeIntervalSince1970];
+  loginReq.expired = [NSNumber numberWithLong:([NSDate date].timeIntervalSince1970 + 60)];
   loginReq.loginMemo = @"Memo";
 
   [MathWalletAPI sendReq:loginReq];
@@ -75,7 +75,7 @@ iOS9以上需要在info.plist进行如下设置：
   transferReq.dappData = @"备注";
 
   transferReq.desc = @"这是展示在钱包中的描述";
-  transferReq.expired = [NSNumber numberWithLong:[NSDate date].timeIntervalSince1970];
+  transferReq.expired = [NSNumber numberWithLong:([NSDate date].timeIntervalSince1970 + 60)];
   
   [MathWalletAPI sendReq:transferReq];
 ```
