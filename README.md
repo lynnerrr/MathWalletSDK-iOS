@@ -15,7 +15,7 @@ iOS9以上需要在info.plist进行如下设置：
 ### 2、注册URL Schemes和处理URL
 
 ```Objective C
-#import <MathWalletSDK/MathWalletAPI.h>
+#import <MathWalletSDK/MathWalletSDK.h>
   
   
 @implementation AppDelegate
