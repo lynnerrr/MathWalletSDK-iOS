@@ -5,10 +5,11 @@
 
 ## 如何使用？
 
-### 1、在Xcode工程info.plist-> URL types -> URL Schemes里添加
+### 1、配置URL Schemes
+#### Xcode工程info.plist-> URL types -> URL Schemes
 ![URL Schemes](https://github.com/MediShares/MathWalletSDK-iOS/blob/master/urlschemes.jpeg "URL Schemes")
 
-iOS9以上需要在info.plist进行如下设置：
+#### iOS9以上需要在info.plist进行如下设置：
 ![URL Schemes](https://github.com/MediShares/MathWalletSDK-iOS/blob/master/plist.jpeg "URL Schemes")
 
 
