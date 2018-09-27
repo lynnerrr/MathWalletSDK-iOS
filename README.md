@@ -44,7 +44,7 @@
 ```Objective C
   MathWalletLoginReq *loginReq = [[MathWalletLoginReq alloc] init];
   // 公链标识
-  loginReq.blockchain = @"eosio";
+  loginReq.blockchain = @"eosio";   // eosio、eosforce、ethereum
   // DApp信息
   loginReq.dappIcon = @"http://www.mathwallet.org/images/download/wallet_cn.png";
   loginReq.dappName = @"Demos";
@@ -62,7 +62,7 @@
 ```Objective C
   MathWalletTransferReq *transferReq = [[MathWalletTransferReq alloc] init];
   // 公链标识
-  transferReq.blockchain = @"eosio";
+  transferReq.blockchain = @"eosio";  // eosio、eosforce、ethereum
   // DApp信息
   transferReq.dappIcon = @"http://www.mathwallet.org/images/download/wallet_cn.png";
   transferReq.dappName = @"Demos";
