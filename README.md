@@ -1,6 +1,7 @@
 # MathWalletSDK-iOS
-基于SimpleWallet 协议的SDK
 
+#### 基于SimpleWallet协议的Android SDK
+#### 支持公链 ETH,EOS,EOSFORCE 等
 
 
 ## 如何使用？
